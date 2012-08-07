@@ -22,13 +22,13 @@ Writing "Hello, World!" is a challenge, if you do not know the eco-system of the
 
 This is my code, nothing clever or unusual.
 
-'''java
+```java
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
 }
-'''
+```
 
 
 
