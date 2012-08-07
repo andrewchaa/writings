@@ -30,5 +30,29 @@ public class HelloWorld {
 }
 ```
 
+Now, next challenge is to write the first unit test. I have no idea how to add junit. I wanted to trust IntelliJ and added @Test attribute (not sure if this is called attribute) and used "Press Alt + ENTER" that works for all. And it added junit-4.10.jar to external libraries. Also, it's interesting that import works like "org.junit.Assert.*" I thought by specifying "org.junit.Assert", all methods that belong to Assert would come, but I had to use *. It's different from C#'s name space. [JUnitQuickTutorial](http://code.google.com/p/t2framework/wiki/JUnitQuickTutorial) helped me to get started.
 
+
+```java
+
+package com.example.helloworld;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: andrew.chaa
+ * Date: 07/08/12
+ * Time: 11:12
+ * To change this template use File | Settings | File Templates.
+ */
+public class HelloWorldTest {
+    @Test
+    public void test_true() {
+        assertTrue(true);
+    }
+}
+
+```
 
